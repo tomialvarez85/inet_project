@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { logDOM } from '@testing-library/react';
 import "./Navbar.css"
-import Logo from "../../media/Logo.png";
 import { Link } from "react-router-dom";
 
 
