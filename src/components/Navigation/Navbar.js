@@ -13,7 +13,7 @@ export const Navigation = ({isScrolling}) => {
           <li><h1 className="header-m">MUSEO</h1></li>
           <li><a class="header-a" href="/">Inicio</a></li>
           <li><a class="header-a" href="/Mapas">Mapa</a></li>
-          <li><a class="header-a" href="/Exposiciones">Exposiciones</a></li>
+          <li><a class="header-a" href="/Exposiciones">Exhibiciones</a></li>
           <li><a class="header-a" href="/VisitasGuiadas">Visitas Guiadas</a></li> 
         </ul>
       </header> 

@@ -12,15 +12,18 @@ function VisitasGuiadas() {
         <div className="main-div">
             <div className="img-div"></div>
             <div className="about-div">
-                <h3 className="h">Nombre de la Visita:</h3>
-                <h6>Encargado:</h6>
-                <h6>Idioma de la visita:</h6>
-                <h6>Fecha y horario:</h6>
-                <h6>Espacios disponibles:</h6>
-                <div className="buttons-div">
-                    <a className="btn-ins" href="#">Inscribirme</a>
-                    <a className="btn-rec" href="#">Recorrido</a>
-                </div>
+              <h3 className="h">Nombre de la Visita:</h3>
+              <div className="circle-div">
+                <div className="circle"></div>
+                <h6 className="first-h">Encargado:</h6>
+              </div>
+              <h6 className="second-h">Idioma de la visita:</h6>
+              <h6 className="third-h">Fecha y horario:</h6>
+              <h6 className="fourth-h">Espacios disponibles:</h6>
+              <div className="buttons-div">
+                <a className="btn-ins" href="#">Inscribirme</a>
+                <a className="btn-rec" href="#">Recorrido</a>
+              </div>
             </div>
         </div>
     </div>

@@ -1,11 +1,13 @@
 .main-title{
+    text-align: left;
+    margin-left: calc(43% / 5);
     margin-top: 80px;
-    margin-left: 12%;
+    margin-bottom: 60px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 55px;
-    line-height: 85.33px;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 85px;
     color: #000000;
 }
 
@@ -17,10 +19,15 @@
 }
 
 .img-div{
+    margin-left: calc(53% / 15);
     align-self: flex-start;
     width: 400px;
     height: 400px;
     background: #D9D9D9;
+}
+
+.about-div{
+    margin-left: 40px;
 }
 
 .h{
@@ -30,15 +37,43 @@
     font-size: 30px;
     line-height: 44px;
     color: #000000; 
+    margin-bottom: 30px;
 }
 
-h6{
+.circle-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.circle{
+    background: #FFC530;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.first-h{
+    align-self: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
     color: #3A3A3A;
+    margin-left: 8px;
+}
+
+.second-h, .third-h, .fourth-h{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #3A3A3A;
+    margin-bottom: 27px;
 }
 
 .buttons-div{
