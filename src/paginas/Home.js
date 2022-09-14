@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import Navigation from '../components/Navigation/Navbar';
 import './Home.css';
+import axios from 'axios';
 
 
 export const Home = () => {
 
   return (
     <div className="Home">
+      
       <Navigation/>
       <div className="main-div">
           <div className="aboutus-div">

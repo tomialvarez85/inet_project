@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .mainn-div{
+    align-self: center;
     height: 820px;
     width: 750px;
     background: #FFFFFF;
