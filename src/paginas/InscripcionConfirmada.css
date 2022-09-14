@@ -1,0 +1,117 @@
+.InscripcionConfirmada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainn-div{
+    height: 820px;
+    width: 750px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.top-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.main-h{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.submain-h{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.bottom-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bottom-h{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000; 
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+.circlee-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.circlee{
+    background: #FFC530;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.hh{
+    align-self: flex-start;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 60px;
+    color: #3A3A3A;
+    margin-left: 8px;
+}
+
+.hhh{
+    align-self: flex-start;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #3A3A3A;
+    margin-top: 30px;
+}
+
+.btn-aceptar{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 80px;
+    width: 85%;
+    height: 70px;
+    background: #FFBC11;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
