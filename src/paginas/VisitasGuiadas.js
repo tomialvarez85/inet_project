@@ -21,7 +21,7 @@ function VisitasGuiadas() {
               <h6 className="third-h">Fecha y horario:</h6>
               <h6 className="fourth-h">Espacios disponibles:</h6>
               <div className="buttons-div">
-                <a className="btn-ins" href="#">Inscribirme</a>
+                <a className="btn-ins" href="/Inscripcion">Inscribirme</a>
                 <a className="btn-rec" href="#">Recorrido</a>
               </div>
             </div>
