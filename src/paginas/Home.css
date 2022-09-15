@@ -49,6 +49,14 @@
     align-self: flex-start;
 }
 
+.map{
+    align-self: flex-start;
+    height: 300px;
+    width: 400px;
+    border: none;
+    margin-bottom: 40px;
+}
+
 .btn-visitas{
     background-color: #FFBC11;
     color: #FFFFFF;

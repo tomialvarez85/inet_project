@@ -5,11 +5,23 @@ import axios from 'axios';
 
 
 class VisitaGuiada{
-  constructor(id, cantvisitas, tema){
+  id = 0;
+  cantvisitas = 0;
+  tema = '';
+  idiomas = '';
+  fecha = '';
+  encargadofn = '';
+  encargadoln = '';
+  imageurl = '';
+
+  constructor(id, cantvisitas, tema, fecha, encargadofn, encargadoln, imageurl){
     this.id = id;
     this.cantvisitas = cantvisitas;
     this.tema = tema;
-
+    this.fecha = fecha;
+    this.encargadofn = encargadofn;
+    this.encargadoln = encargadoln;
+    this.imageurl = imageurl
   }
 }
 
@@ -19,18 +31,21 @@ function VisitasGuiadas() {
 
   useEffect(() => {
     axios.get('https://inet-museum.herokuapp.com/api/v1/guidedvisits/')
-    .then(res => {
-      let i = 0;
-      res.data.map(x => {
-        setVisitas(olditems => [
-          ...olditems, new VisitaGuiada(i++, x.slots, x.topic)
-        ])
+    .then(res => {    
+      const visitasMapped = res.data.map(x => {
+        let visita = new VisitaGuiada(x.id, x.slots, x.topic, x.date_time, x.guide.first_name, x.guide.last_name, x.image);
+        x.guide.employee_lenguage.forEach(lang => {
+          visita.idiomas += ", " + lang.lenguage_name;
+        });
+        return visita;
       });
+
+      setVisitas(visitasMapped);
     }).catch(err => {
       console.log(err)
     })
   }, [])
-  
+
 
   return (
     <div className="VisitasGuiadas">
@@ -40,15 +55,15 @@ function VisitasGuiadas() {
           {
             visitas.map(visita => (
               <div key={visita.id}>
-                <div className="img-div"></div>
+                <img src={visita.imageurl} className="img-div"></img>
                 <div className="about-div">
                   <h3 className="h">Nombre de la Visita: {visita.tema}</h3>
                 <div className="circle-div">
                   <div className="circle"></div>
-                  <h6 className="first-h">Encargado:</h6>
+                  <h6 className="first-h">Encargado: {visita.encargadofn} {visita.encargadoln}</h6>
                 </div>
-                <h6 className="second-h">Idioma de la visita:</h6>
-                <h6 className="third-h">Fecha y horario:</h6>
+                <h6 className="second-h">Idioma de la visita: {visita.idiomas}</h6>
+                <h6 className="third-h">Fecha y horario: {visita.fecha}</h6>
                 <h6 className="fourth-h">Espacios disponibles: {visita.cantvisitas}</h6>
                 <div className="buttons-div">
                   <a className="btn-ins" href="/Inscripcion">Inscribirme</a>

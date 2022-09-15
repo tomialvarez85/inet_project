@@ -14,12 +14,11 @@
 .main-div{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: center;
+    align-content: space-around;
 }
 
 .img-div{
-    margin-left: calc(53% / 15);
     align-self: flex-start;
     width: 400px;
     height: 400px;
