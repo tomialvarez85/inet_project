@@ -1,7 +1,7 @@
-import {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import Navigation from '../components/Navigation/Navbar';
 import './Exposiciones.css';
-import React from 'react'
+
 
 export default function Exposiciones() {
   return (
