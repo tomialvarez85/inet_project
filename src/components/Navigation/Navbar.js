@@ -1,26 +1,36 @@
 import React, { useState } from "react";
-import { logDOM } from '@testing-library/react';
+
+import Container from 'react-bootstrap/Container';  
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import "./Navbar.css"
-import { Link } from "react-router-dom";
 
 
 
-export const Navigation = ({isScrolling}) => {
+function NavBar() {
   return (
     <>
-      <header className="header">
-        <ul className="header-ul">
-          <li><h1 className="header-m">MUSEO</h1></li>
-          <li><a className="header-a" href="/">Inicio</a></li>
-          <li><a className="header-a" href="/Mapas">Mapa</a></li>
-          <li><a className="header-a" href="/Exposiciones">Exhibiciones</a></li>
-          <li><a className="header-a" href="/VisitasGuiadas">Visitas Guiadas</a></li> 
-        </ul>
-      </header> 
+      
+      <Navbar className="navbar" expand="lg">
+        <Container className="unpadding" fluid>
+          <Navbar.Brand className="nav-title" href="/">MUSEO</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link className="nav-link" href="/Mapas">Mapas</Nav.Link>
+              <Nav.Link className="nav-link" href="/Exposiciones">Exhibiciones</Nav.Link>
+              <Nav.Link className="nav-link" href="/VisitasGuiadas">Visitas Guiadas</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
     </>
   );
 };
 
 
 
-export default Navigation;
+export default NavBar;

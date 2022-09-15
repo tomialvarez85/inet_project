@@ -1,0 +1,35 @@
+.modal {
+    padding: 60px;
+    display: none;
+    background-color: rgba(0, 0 , 0, .60);
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.modal.is-open {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content {
+    background-color:#fff !important;
+    padding: 20px !important;
+    border-radius: 20px !important;
+}
+
+.modal-close {
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    top: 20px;
+    right: 20px;
+}

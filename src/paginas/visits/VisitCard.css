@@ -1,0 +1,53 @@
+.visit-card {
+    margin-bottom: 100px;
+}
+
+.visit-img {
+    background-color: var(--grey);
+    border-radius: 20px;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+}
+
+.visit-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.guide-photo {
+    background-color: var(--main-color);
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.guide-name {
+    margin: 0;
+}
+
+.visit-item {
+    margin: 20px 0;
+}
+
+.visit-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-ins {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.btn-rec {
+    color: var(--main-color) !important;
+    background-color: #fff !important;
+    text-decoration: none;
+    border-style: solid !important;
+    border-color: var(--main-color);
+    width: 250px;
+}
