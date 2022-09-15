@@ -1,0 +1,36 @@
+.land-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.land-img{
+    background-image: url(../../images/Palacio-Ferreyra-5.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 450px;
+}
+
+.btn-visitas{
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    width: fit-content;
+    padding: 15px 25px;
+    margin: 20px 0;
+}
+
+.btn-visitas:hover {
+    color: #fff;
+}
+
+.land-about-us {
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    font-weight: 600;
+}

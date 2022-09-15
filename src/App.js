@@ -1,29 +1,32 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
-import Home from "./paginas/Home";
-import VisitasGuiadas from './paginas/VisitasGuiadas';
-import Exposiciones from './paginas/Exposiciones';
-import InscripcionConfirmada from './paginas/InscripcionConfirmada';
-import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import NavBar from './components/Navigation/Navbar';
+import Home from "./paginas/home/Home";
+import VisitasGuiadas from './paginas/visits/VisitasGuiadas';
+import Exhibtions from './paginas/exhibitions/Exhibitions';
 import Mapas from './paginas/Mapas';
-import Inscripcion from './paginas/Inscripcion';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import './styles/styles.css';
 
 
 function App() {
 
   
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element= {<Home />} />
-          <Route path="/VisitasGuiadas" element= {<VisitasGuiadas />} />
-          <Route path="/Exposiciones" element= {<Exposiciones />} />
-          <Route path="/Mapas" element= {<Mapas />} />7
-          <Route path="/Inscripcion" element= {<Inscripcion />} />
-          <Route path="/InscripcionConfirmada" element= {<InscripcionConfirmada />} />
-        </Routes>
-      </BrowserRouter>
+
+      <>
+        <NavBar />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element= {<Home />} />
+            <Route path="/VisitasGuiadas" element= {<VisitasGuiadas />} />
+            <Route path="/Exposiciones" element= {<Exhibtions />} />
+            <Route path="/Mapas" element= {<Mapas />} />
+          </Routes>
+        </BrowserRouter>
+      </>
     
     );
   
